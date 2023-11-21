@@ -1,8 +1,10 @@
 ﻿using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.RazorPages;
 using Service.Contracts;
 using Shared.DataTransferObjects;
 using Shared.RequestFeatures;
+using System.Text.Json;
 
 namespace WebApp.Presentation.Controllers
 {
@@ -18,8 +20,16 @@ namespace WebApp.Presentation.Controllers
         [HttpGet]
         public async Task<IActionResult> GetCarModels(Guid carBrandId, [FromQuery] CarModelParameters carModelParametrs)
         {
-            var carModels = await _service.CarModelService.GetCarModelsAsync(carBrandId, carModelParametrs ,trackChanges: false);
-            return Ok(carModels);
+            //var carModels = await _service
+            //.CarModelService
+            //.GetCarModelsAsync(carBrandId, carModelParametrs ,trackChanges: false);
+            var pagedResult = await _service
+                .CarModelService
+                .GetCarModelsAsync(carBrandId,carModelParametrs , trackChanges : false);
+
+            Response.Headers.Add("X-Pagination", JsonSerializer.Serialize(pagedResult.metaData));
+
+            return Ok(pagedResult.carModels);
         }
 
         [HttpGet("{id:guid}", Name = "GetCarModelByBrand")]

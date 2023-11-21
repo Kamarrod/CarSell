@@ -15,7 +15,8 @@ namespace WebApp.Extensions
                 optinins.AddPolicy("CorsPolicy", builder =>
                 builder.AllowAnyOrigin()
                 .AllowAnyMethod()
-                .AllowAnyHeader());
+                .AllowAnyHeader()
+                .WithExposedHeaders("X-Pagination"));
             });
 
         public static void ConfigureIISIntegration(this IServiceCollection services) =>

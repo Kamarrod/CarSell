@@ -27,16 +27,16 @@ namespace Service
             _mapper = mapper;
         }
 
-        public async Task<IEnumerable<CarModelDTO>> GetCarModelsAsync(Guid carBrandId, 
-            CarModelParameters carModelParameters, bool trackChanges)
+        public async Task<(IEnumerable<CarModelDTO> carModels, MetaData metaData )> GetCarModelsAsync
+            (Guid carBrandId, CarModelParameters carModelParameters, bool trackChanges)
         {
             var carBrand = await _repository.CarBrand.GetCarBrandAsync(carBrandId, trackChanges);
             if (carBrand == null)
                 throw new CarBrandNotFoundException(carBrandId);
-            var carModels = await _repository.CarModel.GetCarModelsAsync(carBrandId, carModelParameters ,trackChanges);
+            var carModelsWithMetaData = await _repository.CarModel.GetCarModelsAsync(carBrandId, carModelParameters ,trackChanges);
 
-            var carModelsDTO = _mapper.Map<IEnumerable<CarModelDTO>>(carModels);
-            return carModelsDTO;
+            var carModelsDTO = _mapper.Map<IEnumerable<CarModelDTO>>(carModelsWithMetaData);
+            return (carModels : carModelsDTO, metaData : carModelsWithMetaData.MetaData);
         }
 
         public async Task<CarModelDTO> GetCarModelAsync(Guid carModelId,Guid carBrandId, bool trackChanges)

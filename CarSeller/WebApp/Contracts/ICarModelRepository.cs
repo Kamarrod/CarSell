@@ -10,7 +10,7 @@ namespace Contracts
 {
     public interface ICarModelRepository
     {
-        Task<IEnumerable<CarModel>> GetCarModelsAsync(Guid carBrandId, CarModelParameters carModelParameters, bool trackChanges);
+        Task<PagedList<CarModel>> GetCarModelsAsync(Guid carBrandId, CarModelParameters carModelParameters, bool trackChanges);
         Task<CarModel> GetCarModelAsync(Guid carModelId, Guid carBrandId, bool trackChanges);
         void CreateCarModel(Guid carBrandId, CarModel carModel);
         void DeleteCarModel(CarModel carModel);
