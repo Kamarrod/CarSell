@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/kt95qtBXjdGKOt4LEG2nZICwRAvparBYi96X3TM2oJ+/ObZCCw/CtlCfUCdlwBUTa23iWP9ooUuZZrA+JT88w==",
+  "dgSpecHash": "cad5sCY9n2Jl8Zk1FC9FwrSZYlfx116u/i0gODKSt6447zEZlWy7C1JIy8pnaftb6vTwvyHLToPZvLlLuz3ygQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Дом\\source\\repos\\CarSeller\\CarSeller\\WebApp\\Repository\\Repository.csproj",
+  "projectFilePath": "C:\\Users\\Дом\\source\\repos\\CarSell\\CarSell\\CarSeller\\WebApp\\Repository\\Repository.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Дом\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.13\\microsoft.entityframeworkcore.7.0.13.nupkg.sha512",
     "C:\\Users\\Дом\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.13\\microsoft.entityframeworkcore.abstractions.7.0.13.nupkg.sha512",

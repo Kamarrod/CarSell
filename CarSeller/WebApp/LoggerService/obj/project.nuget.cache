@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ki1IByKck7kCRCo1fwEyO5Z8uwczjcCVUZVHg2wRIFfRV8k+vMhzZcD04X8mDuePJ5cCG7eNXnzwVDGMPkZ/Pg==",
+  "dgSpecHash": "JIjUqYx119lr0BUscshxuLcNOtaP/rgzbvtEtYR4HzUXuvU1FbL/Nk1LOyq2AOvdyy7uQ/DzQbIl9On9y1+sZA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Дом\\source\\repos\\CarSeller\\CarSeller\\WebApp\\LoggerService\\LoggerService.csproj",
+  "projectFilePath": "C:\\Users\\Дом\\source\\repos\\CarSell\\CarSell\\CarSeller\\WebApp\\LoggerService\\LoggerService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Дом\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\Дом\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.0\\microsoft.extensions.dependencyinjection.6.0.0.nupkg.sha512",

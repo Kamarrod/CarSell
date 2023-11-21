@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Дом\\source\\repos\\CarSeller\\CarSeller\\WebApp\\WebApp.Presentation\\WebApp.Presentation.csproj": {}
+    "C:\\Users\\Дом\\source\\repos\\CarSell\\CarSell\\CarSeller\\WebApp\\WebApp.Presentation\\WebApp.Presentation.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Дом\\source\\repos\\CarSeller\\CarSeller\\WebApp\\Entities\\Entities.csproj": {
+    "C:\\Users\\Дом\\source\\repos\\CarSell\\CarSell\\CarSeller\\WebApp\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Дом\\source\\repos\\CarSeller\\CarSeller\\WebApp\\Entities\\Entities.csproj",
+        "projectUniqueName": "C:\\Users\\Дом\\source\\repos\\CarSell\\CarSell\\CarSeller\\WebApp\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "C:\\Users\\Дом\\source\\repos\\CarSeller\\CarSeller\\WebApp\\Entities\\Entities.csproj",
+        "projectPath": "C:\\Users\\Дом\\source\\repos\\CarSell\\CarSell\\CarSeller\\WebApp\\Entities\\Entities.csproj",
         "packagesPath": "C:\\Users\\Дом\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Дом\\source\\repos\\CarSeller\\CarSeller\\WebApp\\Entities\\obj\\",
+        "outputPath": "C:\\Users\\Дом\\source\\repos\\CarSell\\CarSell\\CarSeller\\WebApp\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -64,14 +64,14 @@
         }
       }
     },
-    "C:\\Users\\Дом\\source\\repos\\CarSeller\\CarSeller\\WebApp\\Service.Contracts\\Service.Contracts.csproj": {
+    "C:\\Users\\Дом\\source\\repos\\CarSell\\CarSell\\CarSeller\\WebApp\\Service.Contracts\\Service.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Дом\\source\\repos\\CarSeller\\CarSeller\\WebApp\\Service.Contracts\\Service.Contracts.csproj",
+        "projectUniqueName": "C:\\Users\\Дом\\source\\repos\\CarSell\\CarSell\\CarSeller\\WebApp\\Service.Contracts\\Service.Contracts.csproj",
         "projectName": "Service.Contracts",
-        "projectPath": "C:\\Users\\Дом\\source\\repos\\CarSeller\\CarSeller\\WebApp\\Service.Contracts\\Service.Contracts.csproj",
+        "projectPath": "C:\\Users\\Дом\\source\\repos\\CarSell\\CarSell\\CarSeller\\WebApp\\Service.Contracts\\Service.Contracts.csproj",
         "packagesPath": "C:\\Users\\Дом\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Дом\\source\\repos\\CarSeller\\CarSeller\\WebApp\\Service.Contracts\\obj\\",
+        "outputPath": "C:\\Users\\Дом\\source\\repos\\CarSell\\CarSell\\CarSeller\\WebApp\\Service.Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -93,11 +93,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Дом\\source\\repos\\CarSeller\\CarSeller\\WebApp\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\Дом\\source\\repos\\CarSeller\\CarSeller\\WebApp\\Entities\\Entities.csproj"
+              "C:\\Users\\Дом\\source\\repos\\CarSell\\CarSell\\CarSeller\\WebApp\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\Дом\\source\\repos\\CarSell\\CarSell\\CarSeller\\WebApp\\Entities\\Entities.csproj"
               },
-              "C:\\Users\\Дом\\source\\repos\\CarSeller\\CarSeller\\WebApp\\Shared\\Shared.csproj": {
-                "projectPath": "C:\\Users\\Дом\\source\\repos\\CarSeller\\CarSeller\\WebApp\\Shared\\Shared.csproj"
+              "C:\\Users\\Дом\\source\\repos\\CarSell\\CarSell\\CarSeller\\WebApp\\Shared\\Shared.csproj": {
+                "projectPath": "C:\\Users\\Дом\\source\\repos\\CarSell\\CarSell\\CarSeller\\WebApp\\Shared\\Shared.csproj"
               }
             }
           }
@@ -131,14 +131,14 @@
         }
       }
     },
-    "C:\\Users\\Дом\\source\\repos\\CarSeller\\CarSeller\\WebApp\\Shared\\Shared.csproj": {
+    "C:\\Users\\Дом\\source\\repos\\CarSell\\CarSell\\CarSeller\\WebApp\\Shared\\Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Дом\\source\\repos\\CarSeller\\CarSeller\\WebApp\\Shared\\Shared.csproj",
+        "projectUniqueName": "C:\\Users\\Дом\\source\\repos\\CarSell\\CarSell\\CarSeller\\WebApp\\Shared\\Shared.csproj",
         "projectName": "Shared",
-        "projectPath": "C:\\Users\\Дом\\source\\repos\\CarSeller\\CarSeller\\WebApp\\Shared\\Shared.csproj",
+        "projectPath": "C:\\Users\\Дом\\source\\repos\\CarSell\\CarSell\\CarSeller\\WebApp\\Shared\\Shared.csproj",
         "packagesPath": "C:\\Users\\Дом\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Дом\\source\\repos\\CarSeller\\CarSeller\\WebApp\\Shared\\obj\\",
+        "outputPath": "C:\\Users\\Дом\\source\\repos\\CarSell\\CarSell\\CarSeller\\WebApp\\Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -191,14 +191,14 @@
         }
       }
     },
-    "C:\\Users\\Дом\\source\\repos\\CarSeller\\CarSeller\\WebApp\\WebApp.Presentation\\WebApp.Presentation.csproj": {
+    "C:\\Users\\Дом\\source\\repos\\CarSell\\CarSell\\CarSeller\\WebApp\\WebApp.Presentation\\WebApp.Presentation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Дом\\source\\repos\\CarSeller\\CarSeller\\WebApp\\WebApp.Presentation\\WebApp.Presentation.csproj",
+        "projectUniqueName": "C:\\Users\\Дом\\source\\repos\\CarSell\\CarSell\\CarSeller\\WebApp\\WebApp.Presentation\\WebApp.Presentation.csproj",
         "projectName": "WebApp.Presentation",
-        "projectPath": "C:\\Users\\Дом\\source\\repos\\CarSeller\\CarSeller\\WebApp\\WebApp.Presentation\\WebApp.Presentation.csproj",
+        "projectPath": "C:\\Users\\Дом\\source\\repos\\CarSell\\CarSell\\CarSeller\\WebApp\\WebApp.Presentation\\WebApp.Presentation.csproj",
         "packagesPath": "C:\\Users\\Дом\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Дом\\source\\repos\\CarSeller\\CarSeller\\WebApp\\WebApp.Presentation\\obj\\",
+        "outputPath": "C:\\Users\\Дом\\source\\repos\\CarSell\\CarSell\\CarSeller\\WebApp\\WebApp.Presentation\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -220,8 +220,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Дом\\source\\repos\\CarSeller\\CarSeller\\WebApp\\Service.Contracts\\Service.Contracts.csproj": {
-                "projectPath": "C:\\Users\\Дом\\source\\repos\\CarSeller\\CarSeller\\WebApp\\Service.Contracts\\Service.Contracts.csproj"
+              "C:\\Users\\Дом\\source\\repos\\CarSell\\CarSell\\CarSeller\\WebApp\\Service.Contracts\\Service.Contracts.csproj": {
+                "projectPath": "C:\\Users\\Дом\\source\\repos\\CarSell\\CarSell\\CarSeller\\WebApp\\Service.Contracts\\Service.Contracts.csproj"
               }
             }
           }

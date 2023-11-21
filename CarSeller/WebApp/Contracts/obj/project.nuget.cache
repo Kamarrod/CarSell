@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9m0XI3EbWU5Uow4S/Om6WxpeKKhGWNmpBWk7RNYOS3MyLeD8XOtLIRqlMoO6vEuOjiiY/NiRhj3sOqpRZWT02A==",
+  "dgSpecHash": "df44LaMqpK80wMd7d3ozFbhH5mYno4LeADWZIO5jRGLAAX1gDM2nN+4CBwdLLWdkIeLWbWOQMWzXe27vfInuHw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Дом\\source\\repos\\CarSeller\\CarSeller\\WebApp\\Contracts\\Contracts.csproj",
+  "projectFilePath": "C:\\Users\\Дом\\source\\repos\\CarSell\\CarSell\\CarSeller\\WebApp\\Contracts\\Contracts.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

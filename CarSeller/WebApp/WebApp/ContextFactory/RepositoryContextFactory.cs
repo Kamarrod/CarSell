@@ -17,7 +17,7 @@ namespace WebApp.ContextFactory
             .UseSqlServer(@"Server=localhost;
                                    Database=CarSeller;
                                    User Id=postgres;
-                                   Password=password;
+                                   Password=Vbhcfzgjdrf09;
                                    Trusted_Connection=True;
                                    TrustServerCertificate=False;
                                    Encrypt=False;",//(configuration.GetConnectionString("sqlConnection"),

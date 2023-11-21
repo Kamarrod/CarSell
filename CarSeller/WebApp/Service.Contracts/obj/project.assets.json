@@ -49,11 +49,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Дом\\source\\repos\\CarSeller\\CarSeller\\WebApp\\Service.Contracts\\Service.Contracts.csproj",
+      "projectUniqueName": "C:\\Users\\Дом\\source\\repos\\CarSell\\CarSell\\CarSeller\\WebApp\\Service.Contracts\\Service.Contracts.csproj",
       "projectName": "Service.Contracts",
-      "projectPath": "C:\\Users\\Дом\\source\\repos\\CarSeller\\CarSeller\\WebApp\\Service.Contracts\\Service.Contracts.csproj",
+      "projectPath": "C:\\Users\\Дом\\source\\repos\\CarSell\\CarSell\\CarSeller\\WebApp\\Service.Contracts\\Service.Contracts.csproj",
       "packagesPath": "C:\\Users\\Дом\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Дом\\source\\repos\\CarSeller\\CarSeller\\WebApp\\Service.Contracts\\obj\\",
+      "outputPath": "C:\\Users\\Дом\\source\\repos\\CarSell\\CarSell\\CarSeller\\WebApp\\Service.Contracts\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -75,11 +75,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Дом\\source\\repos\\CarSeller\\CarSeller\\WebApp\\Entities\\Entities.csproj": {
-              "projectPath": "C:\\Users\\Дом\\source\\repos\\CarSeller\\CarSeller\\WebApp\\Entities\\Entities.csproj"
+            "C:\\Users\\Дом\\source\\repos\\CarSell\\CarSell\\CarSeller\\WebApp\\Entities\\Entities.csproj": {
+              "projectPath": "C:\\Users\\Дом\\source\\repos\\CarSell\\CarSell\\CarSeller\\WebApp\\Entities\\Entities.csproj"
             },
-            "C:\\Users\\Дом\\source\\repos\\CarSeller\\CarSeller\\WebApp\\Shared\\Shared.csproj": {
-              "projectPath": "C:\\Users\\Дом\\source\\repos\\CarSeller\\CarSeller\\WebApp\\Shared\\Shared.csproj"
+            "C:\\Users\\Дом\\source\\repos\\CarSell\\CarSell\\CarSeller\\WebApp\\Shared\\Shared.csproj": {
+              "projectPath": "C:\\Users\\Дом\\source\\repos\\CarSell\\CarSell\\CarSeller\\WebApp\\Shared\\Shared.csproj"
             }
           }
         }

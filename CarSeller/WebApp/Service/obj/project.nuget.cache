@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Y7MQQ+R81j7tIccK1n2BZq+1kWg1MMB00qHAxte2xPtbRnmSuTCiMgIKeDGDhfMotTXXhYjq7X2UdusKB4qIXw==",
+  "dgSpecHash": "d3Tsrw40iU/80DZ1eY9WQ6Pwa9NMhPPXBk6U0PSNgwJHA0EfSi46i8Yv/ilI+wa4RVpQ+y/USqBOXdLtZZ3+Tg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Дом\\source\\repos\\CarSeller\\CarSeller\\WebApp\\Service\\Service.csproj",
+  "projectFilePath": "C:\\Users\\Дом\\source\\repos\\CarSell\\CarSell\\CarSeller\\WebApp\\Service\\Service.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Дом\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Дом\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

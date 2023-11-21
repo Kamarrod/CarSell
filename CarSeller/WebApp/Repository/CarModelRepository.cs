@@ -1,6 +1,7 @@
 ﻿using Contracts;
 using Entities.Models;
 using Microsoft.EntityFrameworkCore;
+using Shared.RequestFeatures;
 
 namespace Repository
 {
@@ -14,9 +15,12 @@ namespace Repository
             .SingleOrDefaultAsync();
 
 
-        public async Task<IEnumerable<CarModel>> GetCarModelsAsync(Guid carBrandId, bool trackChanges) => await
+        public async Task<IEnumerable<CarModel>> GetCarModelsAsync(Guid carBrandId,
+                CarModelParameters carModelParameters, bool trackChanges) => await
             FindByCondition(x => x.CarBrandId.Equals(carBrandId), trackChanges)
             .OrderBy(x => x.Name)
+            .Skip((carModelParameters.PageNumber - 1) * carModelParameters.PageSize)
+            .Take(carModelParameters.PageSize)
             .ToListAsync();
 
         public void CreateCarModel(Guid carBrandId, CarModel carModel)

@@ -4,6 +4,7 @@ using Entities.Exceptions;
 using Entities.Models;
 using Service.Contracts;
 using Shared.DataTransferObjects;
+using Shared.RequestFeatures;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,12 +27,13 @@ namespace Service
             _mapper = mapper;
         }
 
-        public async Task<IEnumerable<CarModelDTO>> GetCarModelsAsync(Guid carBrandId, bool trackChanges)
+        public async Task<IEnumerable<CarModelDTO>> GetCarModelsAsync(Guid carBrandId, 
+            CarModelParameters carModelParameters, bool trackChanges)
         {
             var carBrand = await _repository.CarBrand.GetCarBrandAsync(carBrandId, trackChanges);
             if (carBrand == null)
                 throw new CarBrandNotFoundException(carBrandId);
-            var carModels = await _repository.CarModel.GetCarModelsAsync(carBrandId, trackChanges);
+            var carModels = await _repository.CarModel.GetCarModelsAsync(carBrandId, carModelParameters ,trackChanges);
 
             var carModelsDTO = _mapper.Map<IEnumerable<CarModelDTO>>(carModels);
             return carModelsDTO;

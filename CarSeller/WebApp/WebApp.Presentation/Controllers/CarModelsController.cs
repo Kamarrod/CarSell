@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Service.Contracts;
 using Shared.DataTransferObjects;
-
+using Shared.RequestFeatures;
 
 namespace WebApp.Presentation.Controllers
 {
@@ -16,9 +16,9 @@ namespace WebApp.Presentation.Controllers
             _service = service;
 
         [HttpGet]
-        public async Task<IActionResult> GetCarModels(Guid carBrandId)
+        public async Task<IActionResult> GetCarModels(Guid carBrandId, [FromQuery] CarModelParameters carModelParametrs)
         {
-            var carModels = await _service.CarModelService.GetCarModelsAsync(carBrandId, trackChanges: false);
+            var carModels = await _service.CarModelService.GetCarModelsAsync(carBrandId, carModelParametrs ,trackChanges: false);
             return Ok(carModels);
         }
 

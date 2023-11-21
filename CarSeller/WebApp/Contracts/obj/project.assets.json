@@ -11,6 +11,16 @@
         "runtime": {
           "bin/placeholder/Entities.dll": {}
         }
+      },
+      "Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Shared.dll": {}
+        }
       }
     }
   },
@@ -19,11 +29,17 @@
       "type": "project",
       "path": "../Entities/Entities.csproj",
       "msbuildProject": "../Entities/Entities.csproj"
+    },
+    "Shared/1.0.0": {
+      "type": "project",
+      "path": "../Shared/Shared.csproj",
+      "msbuildProject": "../Shared/Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Entities >= 1.0.0"
+      "Entities >= 1.0.0",
+      "Shared >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -33,11 +49,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Дом\\source\\repos\\CarSeller\\CarSeller\\WebApp\\Contracts\\Contracts.csproj",
+      "projectUniqueName": "C:\\Users\\Дом\\source\\repos\\CarSell\\CarSell\\CarSeller\\WebApp\\Contracts\\Contracts.csproj",
       "projectName": "Contracts",
-      "projectPath": "C:\\Users\\Дом\\source\\repos\\CarSeller\\CarSeller\\WebApp\\Contracts\\Contracts.csproj",
+      "projectPath": "C:\\Users\\Дом\\source\\repos\\CarSell\\CarSell\\CarSeller\\WebApp\\Contracts\\Contracts.csproj",
       "packagesPath": "C:\\Users\\Дом\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Дом\\source\\repos\\CarSeller\\CarSeller\\WebApp\\Contracts\\obj\\",
+      "outputPath": "C:\\Users\\Дом\\source\\repos\\CarSell\\CarSell\\CarSeller\\WebApp\\Contracts\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -59,8 +75,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Дом\\source\\repos\\CarSeller\\CarSeller\\WebApp\\Entities\\Entities.csproj": {
-              "projectPath": "C:\\Users\\Дом\\source\\repos\\CarSeller\\CarSeller\\WebApp\\Entities\\Entities.csproj"
+            "C:\\Users\\Дом\\source\\repos\\CarSell\\CarSell\\CarSeller\\WebApp\\Entities\\Entities.csproj": {
+              "projectPath": "C:\\Users\\Дом\\source\\repos\\CarSell\\CarSell\\CarSeller\\WebApp\\Entities\\Entities.csproj"
+            },
+            "C:\\Users\\Дом\\source\\repos\\CarSell\\CarSell\\CarSeller\\WebApp\\Shared\\Shared.csproj": {
+              "projectPath": "C:\\Users\\Дом\\source\\repos\\CarSell\\CarSell\\CarSeller\\WebApp\\Shared\\Shared.csproj"
             }
           }
         }

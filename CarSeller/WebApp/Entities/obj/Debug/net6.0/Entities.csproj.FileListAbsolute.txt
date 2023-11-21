@@ -22,3 +22,15 @@ C:\Users\Дом\source\repos\CarSeller\CarSeller\WebApp\Entities\obj\Debug\net6.
 C:\Users\Дом\source\repos\CarSeller\CarSeller\WebApp\Entities\obj\Debug\net6.0\refint\Entities.dll
 C:\Users\Дом\source\repos\CarSeller\CarSeller\WebApp\Entities\obj\Debug\net6.0\Entities.pdb
 C:\Users\Дом\source\repos\CarSeller\CarSeller\WebApp\Entities\obj\Debug\net6.0\ref\Entities.dll
+C:\Users\Дом\source\repos\CarSell\CarSell\CarSeller\WebApp\Entities\bin\Debug\net6.0\Entities.deps.json
+C:\Users\Дом\source\repos\CarSell\CarSell\CarSeller\WebApp\Entities\bin\Debug\net6.0\Entities.dll
+C:\Users\Дом\source\repos\CarSell\CarSell\CarSeller\WebApp\Entities\bin\Debug\net6.0\Entities.pdb
+C:\Users\Дом\source\repos\CarSell\CarSell\CarSeller\WebApp\Entities\obj\Debug\net6.0\Entities.csproj.AssemblyReference.cache
+C:\Users\Дом\source\repos\CarSell\CarSell\CarSeller\WebApp\Entities\obj\Debug\net6.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Дом\source\repos\CarSell\CarSell\CarSeller\WebApp\Entities\obj\Debug\net6.0\Entities.AssemblyInfoInputs.cache
+C:\Users\Дом\source\repos\CarSell\CarSell\CarSeller\WebApp\Entities\obj\Debug\net6.0\Entities.AssemblyInfo.cs
+C:\Users\Дом\source\repos\CarSell\CarSell\CarSeller\WebApp\Entities\obj\Debug\net6.0\Entities.csproj.CoreCompileInputs.cache
+C:\Users\Дом\source\repos\CarSell\CarSell\CarSeller\WebApp\Entities\obj\Debug\net6.0\Entities.dll
+C:\Users\Дом\source\repos\CarSell\CarSell\CarSeller\WebApp\Entities\obj\Debug\net6.0\refint\Entities.dll
+C:\Users\Дом\source\repos\CarSell\CarSell\CarSeller\WebApp\Entities\obj\Debug\net6.0\Entities.pdb
+C:\Users\Дом\source\repos\CarSell\CarSell\CarSeller\WebApp\Entities\obj\Debug\net6.0\ref\Entities.dll

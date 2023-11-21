@@ -9,7 +9,7 @@ namespace Contracts
 {
     public interface ILotRepository
     {
-        Task<IEnumerable<Lot>> GetAllLotsAsync(bool trackChanges);
-        Task<Lot> GetLotAsync(Guid lotId, bool trackChanges);
+        IEnumerable<Lot> GetAllLots(bool trackChanges);
+        Lot GetLot(Guid lotId, bool trackChanges);
     }
 }
