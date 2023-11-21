@@ -1,0 +1,24 @@
+﻿using Entities.Models;
+using Shared.DataTransferObjects;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Service.Contracts
+{
+    public interface ICarModelService
+    {
+        Task<IEnumerable<CarModelDTO>> GetCarModelsAsync(Guid carBrandId, bool trackChanges);
+        Task<CarModelDTO> GetCarModelAsync(Guid carModelId, Guid carBrandId, bool trackChanges);
+        Task<CarModelDTO> CreateCarModelAsync(Guid carBrandId, CarModelForCreationDTO carModelForCreation, bool trackChanges);
+        Task DeleteCarModelAsync(Guid carBrandId, Guid carModelId, bool trackChanges);
+        Task UpdateCarModelAsync(Guid carBrandId, Guid carModelId, CarModelForUpdateDTO carModelForUpdate,
+                            bool brandTrackChanges, bool modelTrackChanges);
+        Task<(CarModelForUpdateDTO carModelToPatch, CarModel carModelEntity)> GetCarModelForPatchAsync(
+            Guid carBrandId, Guid carModelId, bool brandTrackChanges, bool modelTrackChanges);
+        Task SaveChangesForPatchAsync(CarModelForUpdateDTO carModelToPatch, CarModel carModelEntity);
+
+    }
+}
