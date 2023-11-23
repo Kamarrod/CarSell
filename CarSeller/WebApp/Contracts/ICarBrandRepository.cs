@@ -1,4 +1,5 @@
 ﻿using Entities.Models;
+using Shared.RequestFeatures;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +10,7 @@ namespace Contracts
 {
     public interface ICarBrandRepository
     {
-        Task<IEnumerable<CarBrand>> GetAllCarBrandsAsync(bool trackChanges);
+        Task<PagedList<CarBrand>> GetAllCarBrandsAsync(CarBrandParameters carBrandParameters, bool trackChanges);
         Task<CarBrand> GetCarBrandAsync(Guid carbrandId, bool trackChanges);
         void CreateCarBrand(CarBrand carBrand);
         void DeleteCarBrand(CarBrand carBrand);

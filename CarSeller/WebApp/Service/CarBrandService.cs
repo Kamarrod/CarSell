@@ -4,6 +4,7 @@ using Entities.Exceptions;
 using Entities.Models;
 using Service.Contracts;
 using Shared.DataTransferObjects;
+using Shared.RequestFeatures;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,12 +27,13 @@ namespace Service
             _mapper = mapper;
         }
 
-        public async Task<IEnumerable<CarBrandDTO>> GetAllCarBrandsAsync(bool trackChanges)
+        public async Task<(IEnumerable<CarBrandDTO> carBrands, MetaData metaData)> GetAllCarBrandsAsync
+            ( CarBrandParameters carBrandParameters, bool trackChanges)
         {
-                var carBrands = await _repository.CarBrand.GetAllCarBrandsAsync(trackChanges);
+                var carBrandWithMetaData = await _repository.CarBrand.GetAllCarBrandsAsync(carBrandParameters, trackChanges);
 
-                var carBrandsDTO = _mapper.Map<IEnumerable<CarBrandDTO>>(carBrands);
-                return carBrandsDTO;
+                var carBrandsDTO = _mapper.Map<IEnumerable<CarBrandDTO>>(carBrandWithMetaData);
+            return (carBrands: carBrandsDTO, metaData: carBrandWithMetaData.MetaData);
         }
 
         public async Task<CarBrandDTO> GetCarBrandAsync(Guid carBrandId, bool trackChanges)

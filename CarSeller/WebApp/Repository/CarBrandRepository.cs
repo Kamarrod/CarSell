@@ -1,6 +1,7 @@
 ﻿using Contracts;
 using Entities.Models;
 using Microsoft.EntityFrameworkCore;
+using Shared.RequestFeatures;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,10 +15,16 @@ namespace Repository
         public CarBrandRepository(RepositoryContext repositoryContext)
             : base(repositoryContext) { }
 
-        public async Task<IEnumerable<CarBrand>> GetAllCarBrandsAsync(bool trackChanges) => await
+        public async Task<PagedList<CarBrand>> GetAllCarBrandsAsync(CarBrandParameters carBrandParameters ,bool trackChanges)
+        {
+            var carBradns = await
             FindAll(trackChanges)
             .OrderBy(x => x.Name)
             .ToListAsync();
+
+            return PagedList<CarBrand>.ToPagedList(carBradns,
+                carBrandParameters.PageNumber, carBrandParameters.PageSize);
+        }
 
         public async Task<CarBrand> GetCarBrandAsync(Guid carBrandId, bool trackChanges) => await
             FindByCondition(x => x.Id.Equals(carBrandId), trackChanges)

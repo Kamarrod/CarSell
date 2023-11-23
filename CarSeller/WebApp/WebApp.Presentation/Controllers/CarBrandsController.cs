@@ -1,6 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.RazorPages;
 using Service.Contracts;
 using Shared.DataTransferObjects;
+using Shared.RequestFeatures;
+using System.Text.Json;
 
 namespace WebApp.Presentation.Controllers
 {
@@ -13,11 +16,14 @@ namespace WebApp.Presentation.Controllers
         public CarBrandsController(IServiceManager service) => _service = service;
 
         [HttpGet]
-        public async Task<IActionResult> GetCarBrands()
+        public async Task<IActionResult> GetCarBrands([FromQuery] CarBrandParameters carBrandParameters)
         {
             
-            var carBrands = await _service.CarBrandService.GetAllCarBrandsAsync(trackChanges: false);
-                return Ok(carBrands);
+            var carBrandsPagedResult = await _service
+                .CarBrandService
+                .GetAllCarBrandsAsync(carBrandParameters,trackChanges: false);
+            Response.Headers.Add("X-Pagination", JsonSerializer.Serialize(carBrandsPagedResult.metaData));
+            return Ok(carBrandsPagedResult.carBrands);
         }
 
         [HttpGet("{id:guid}", Name = "CarBrandById")]
