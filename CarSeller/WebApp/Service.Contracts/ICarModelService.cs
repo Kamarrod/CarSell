@@ -3,6 +3,7 @@ using Shared.DataTransferObjects;
 using Shared.RequestFeatures;
 using System;
 using System.Collections.Generic;
+using System.Dynamic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,7 +12,7 @@ namespace Service.Contracts
 {
     public interface ICarModelService
     {
-        Task<(IEnumerable<CarModelDTO> carModels, MetaData metaData)> GetCarModelsAsync
+        Task<(IEnumerable<ExpandoObject> carModels, MetaData metaData)> GetCarModelsAsync
             (Guid carBrandId, CarModelParameters carModelParameters ,bool trackChanges);
         Task<CarModelDTO> GetCarModelAsync(Guid carModelId, Guid carBrandId, bool trackChanges);
         Task<CarModelDTO> CreateCarModelAsync

@@ -25,7 +25,7 @@ namespace Repository.Extensions
             if (string.IsNullOrWhiteSpace(orderByQueryString))
                 return carModels.OrderBy(x => x.Name);
 
-            var orderQuery = OrderQueryBuilder.CreateOrderQuery<CarModel>(orderByQueryString);
+            var orderQuery = OrderQueryBuilder<CarModel>.CreateOrderQuery<CarModel>(orderByQueryString);
 
             if (string.IsNullOrWhiteSpace(orderQuery))
                 return carModels.OrderBy(e => e.Name);

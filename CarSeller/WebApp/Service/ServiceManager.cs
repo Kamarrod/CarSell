@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Contracts;
 using Service.Contracts;
+using Shared.DataTransferObjects;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,13 +16,16 @@ namespace Service
         private readonly Lazy<ICarBrandService> _carBrandService;
         private readonly Lazy<ICarModelService> _carModelService;
 
-        public ServiceManager(IRepositoryManager repositoryManager, ILoggerManager loggerManager, IMapper mapper)
+        public ServiceManager(IRepositoryManager repositoryManager,
+                              ILoggerManager loggerManager,
+                              IMapper mapper,
+                              IDataShaper<CarModelDTO> dataShaper)
         {
             _lotService = new Lazy<ILotService>(() => 
                 new LotService(repositoryManager, loggerManager, mapper));
 
             _carModelService = new Lazy<ICarModelService>(() => 
-                new CarModelService(repositoryManager, loggerManager, mapper )) ;
+                new CarModelService(repositoryManager, loggerManager, mapper, dataShaper )) ;
 
             _carBrandService = new Lazy<ICarBrandService>(() => 
                 new CarBrandService(repositoryManager, loggerManager, mapper));

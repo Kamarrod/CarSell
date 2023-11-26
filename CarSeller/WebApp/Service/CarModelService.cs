@@ -7,6 +7,7 @@ using Shared.DataTransferObjects;
 using Shared.RequestFeatures;
 using System;
 using System.Collections.Generic;
+using System.Dynamic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,34 +19,49 @@ namespace Service
         private readonly IRepositoryManager _repository;
         private readonly ILoggerManager _logger;
         private readonly IMapper _mapper;
+        private readonly IDataShaper<CarModelDTO> _dataShaper;
         public CarModelService(IRepositoryManager repository,
                                ILoggerManager logger,
-                               IMapper mapper)
+                               IMapper mapper,
+                               IDataShaper<CarModelDTO> dataShaper)
         {
             _repository = repository;
             _logger = logger;
             _mapper = mapper;
+            _dataShaper = dataShaper;
         }
 
-        public async Task<(IEnumerable<CarModelDTO> carModels, MetaData metaData )> GetCarModelsAsync
+        public async Task<(IEnumerable<ExpandoObject> carModels, MetaData metaData )> GetCarModelsAsync
             (Guid carBrandId, CarModelParameters carModelParameters, bool trackChanges)
         {
-            var carBrand = await _repository.CarBrand.GetCarBrandAsync(carBrandId, trackChanges);
+            var carBrand = await _repository
+                .CarBrand
+                .GetCarBrandAsync(carBrandId, trackChanges);
+
             if (carBrand == null)
                 throw new CarBrandNotFoundException(carBrandId);
-            var carModelsWithMetaData = await _repository.CarModel.GetCarModelsAsync(carBrandId, carModelParameters ,trackChanges);
+            var carModelsWithMetaData = await _repository
+                .CarModel
+                .GetCarModelsAsync(carBrandId, carModelParameters ,trackChanges);
 
             var carModelsDTO = _mapper.Map<IEnumerable<CarModelDTO>>(carModelsWithMetaData);
-            return (carModels : carModelsDTO, metaData : carModelsWithMetaData.MetaData);
+            var shapeData = _dataShaper.ShapeData(carModelsDTO, carModelParameters.Fields);
+            return (carModels : shapeData, metaData : carModelsWithMetaData.MetaData);
         }
 
         public async Task<CarModelDTO> GetCarModelAsync(Guid carModelId,Guid carBrandId, bool trackChanges)
         {
-            var carBrand = await _repository.CarBrand.GetCarBrandAsync(carBrandId, trackChanges);
+            var carBrand = await _repository
+                .CarBrand
+                .GetCarBrandAsync(carBrandId, trackChanges);
+
             if (carBrand == null)
                 throw new CarBrandNotFoundException(carBrandId);
 
-            var carModel = await _repository.CarModel.GetCarModelAsync(carModelId, carBrandId, trackChanges);
+            var carModel = await _repository
+                .CarModel
+                .GetCarModelAsync(carModelId, carBrandId, trackChanges);
+
             if (carModel == null)
                 throw new CarModelNotFoundException(carModelId);
 
