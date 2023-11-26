@@ -8,5 +8,7 @@ namespace Shared.RequestFeatures
 {
     public class CarModelParameters : RequestParameters
     {
+        public CarModelParameters() => OrderBy = "name";
+        public string? SearchTerm { get; set; }
     }
 }

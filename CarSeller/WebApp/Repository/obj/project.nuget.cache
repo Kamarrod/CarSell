@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "cad5sCY9n2Jl8Zk1FC9FwrSZYlfx116u/i0gODKSt6447zEZlWy7C1JIy8pnaftb6vTwvyHLToPZvLlLuz3ygQ==",
+  "dgSpecHash": "SzutohIeXpaFhK/HwC5HTkvfKhHmfdq6rwPVq7DvvnH8h1YrdoPWmPMKjGyVk7lt3baWIhPczvhsXu2GMyx4IA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Дом\\source\\repos\\CarSell\\CarSell\\CarSeller\\WebApp\\Repository\\Repository.csproj",
   "expectedPackageFiles": [
@@ -15,6 +15,7 @@
     "C:\\Users\\Дом\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.0\\microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\Дом\\.nuget\\packages\\microsoft.extensions.options\\7.0.0\\microsoft.extensions.options.7.0.0.nupkg.sha512",
     "C:\\Users\\Дом\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
+    "C:\\Users\\Дом\\.nuget\\packages\\system.linq.dynamic.core\\1.3.7\\system.linq.dynamic.core.1.3.7.nupkg.sha512",
     "C:\\Users\\Дом\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
   ],
   "logs": []

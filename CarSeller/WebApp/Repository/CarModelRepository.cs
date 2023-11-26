@@ -1,7 +1,9 @@
 ﻿using Contracts;
 using Entities.Models;
 using Microsoft.EntityFrameworkCore;
+using Repository.Extensions;
 using Shared.RequestFeatures;
+using System.Security.Cryptography.X509Certificates;
 
 namespace Repository
 {
@@ -19,7 +21,8 @@ namespace Repository
                 CarModelParameters carModelParameters, bool trackChanges)
         {
             var carModels = await FindByCondition(x => x.CarBrandId.Equals(carBrandId), trackChanges)
-            .OrderBy(x => x.Name)
+            .Search(carModelParameters.SearchTerm)
+            .Sort(carModelParameters.OrderBy)
             .ToListAsync();
 
             return PagedList<CarModel>.ToPagedList(carModels,

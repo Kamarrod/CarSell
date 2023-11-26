@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "nEtmQvMzUxH1ncZOELK9BoqgttX5bttcbkNxG1shxWQ/ZLonsZ+mO5NxdabVjl+6pdU7crhaLt7lJxauk4ximg==",
+  "dgSpecHash": "jSr5ji/AD7uDf7ymhba7AxyjL60W0eRBDsjgNJ3gWiRGXKNYpSrZmNFHr/EjnYvjHeVUV7TBkMuwLw9iQlJf9w==",
   "success": true,
   "projectFilePath": "C:\\Users\\Дом\\source\\repos\\CarSell\\CarSell\\CarSeller\\WebApp\\WebApp\\WebApp.csproj",
   "expectedPackageFiles": [
@@ -80,6 +80,7 @@
     "C:\\Users\\Дом\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512",
     "C:\\Users\\Дом\\.nuget\\packages\\system.formats.asn1\\5.0.0\\system.formats.asn1.5.0.0.nupkg.sha512",
     "C:\\Users\\Дом\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.24.0\\system.identitymodel.tokens.jwt.6.24.0.nupkg.sha512",
+    "C:\\Users\\Дом\\.nuget\\packages\\system.linq.dynamic.core\\1.3.7\\system.linq.dynamic.core.1.3.7.nupkg.sha512",
     "C:\\Users\\Дом\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
     "C:\\Users\\Дом\\.nuget\\packages\\system.memory.data\\1.0.2\\system.memory.data.1.0.2.nupkg.sha512",
     "C:\\Users\\Дом\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
