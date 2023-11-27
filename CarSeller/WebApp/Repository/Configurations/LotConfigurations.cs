@@ -15,11 +15,11 @@ namespace Repository.Configurations
         {
             builder.HasData(
                 new Lot
-                { 
-                    Id = Guid.NewGuid(),
-                    Color = "Black",
+                {
+                Id = Guid.NewGuid(),
+                    Description = "Color = REd",
+                    Price = 1000000,
                     PostDate = DateTime.Now,
-                    PostTime= DateTime.Now,
                     ReleaseYear = 1999,
                     Millage = 300000,
                     CarBrandId = new Guid("80abbca8-664d-4b20-b5de-024705497d4a"),
@@ -28,10 +28,10 @@ namespace Repository.Configurations
                 new Lot
                 {
                     Id = Guid.NewGuid(),
-                    Color = "White",
+                    Description = "Description",
                     PostDate = DateTime.Now,
-                    PostTime = DateTime.Now,
                     ReleaseYear = 2005,
+                    Price = 1000000,
                     Millage = 199213,
                     CarBrandId = new Guid("80abbca8-664d-4b20-b5de-024705497d4a"),
                     CarModelId = new Guid("3d490a70-94ce-4d15-9494-5248280c2ce3")

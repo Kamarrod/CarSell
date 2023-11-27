@@ -15,7 +15,7 @@ namespace WebApp.ContextFactory
             var b = configuration.GetConnectionString("sqlConnection");
             var builder = new DbContextOptionsBuilder<RepositoryContext>()
             .UseSqlServer(@"Server=localhost;
-                                   Database=CarSeller;
+                                   Database=CarSell;
                                    User Id=postgres;
                                    Password=Vbhcfzgjdrf09;
                                    Trusted_Connection=True;

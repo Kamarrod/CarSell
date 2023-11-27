@@ -18,6 +18,7 @@ namespace WebApp.Presentation.Controllers
             _service = service;
 
         [HttpGet]
+        [HttpHead]
         public async Task<IActionResult> GetCarModels(Guid carBrandId, [FromQuery] CarModelParameters carModelParametrs)
         {
             //var carModels = await _service
@@ -33,6 +34,7 @@ namespace WebApp.Presentation.Controllers
         }
 
         [HttpGet("{id:guid}", Name = "GetCarModelByBrand")]
+        [HttpHead]
         public async Task<IActionResult> GetCarModel(Guid id, Guid carBrandId)
         {
             var carModel = await _service.CarModelService.GetCarModelAsync(id, carBrandId, trackChanges: false);
@@ -92,5 +94,13 @@ namespace WebApp.Presentation.Controllers
             await _service.CarModelService.SaveChangesForPatchAsync(result.carModelToPatch, result.carModelEntity);
             return NoContent();
         }
+
+        [HttpOptions]
+        public IActionResult GetCarodelsOptions()
+        {
+            Response.Headers.Add("Allow", "GET, OPTIONS, POST, PUT, DELETE");
+            return Ok();
+        }
+
     }
 }

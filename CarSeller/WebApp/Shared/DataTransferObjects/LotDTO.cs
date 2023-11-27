@@ -11,9 +11,10 @@ namespace Shared.DataTransferObjects
     public record LotDTO
     {
         public Guid Id { get; init; }
-        public string? Color { get; init; }
+        //public string? Color { get; init; }
         public DateTime PostDate { get; init; }
-        public DateTime PostTime { get; init; }
+        
+        public decimal Price { get; init; }
         public int ReleaseYear { get; init; }
         public int Millage { get; init; }
 

@@ -340,3 +340,8 @@ C:\Users\Дом\source\repos\CarSell\CarSell\CarSeller\WebApp\WebApp\obj\Debug\n
 C:\Users\Дом\source\repos\CarSell\CarSell\CarSeller\WebApp\WebApp\obj\Debug\net6.0\WebApp.genruntimeconfig.cache
 C:\Users\Дом\source\repos\CarSell\CarSell\CarSeller\WebApp\WebApp\obj\Debug\net6.0\ref\WebApp.dll
 C:\Users\Дом\source\repos\CarSell\CarSell\CarSeller\WebApp\WebApp\bin\Debug\net6.0\System.Linq.Dynamic.Core.dll
+C:\Users\Дом\source\repos\CarSell\CarSell\CarSeller\WebApp\WebApp\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\Дом\source\repos\CarSell\CarSell\CarSeller\WebApp\WebApp\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\Дом\source\repos\CarSell\CarSell\CarSeller\WebApp\WebApp\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Дом\source\repos\CarSell\CarSell\CarSeller\WebApp\WebApp\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\Дом\source\repos\CarSell\CarSell\CarSeller\WebApp\WebApp\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
