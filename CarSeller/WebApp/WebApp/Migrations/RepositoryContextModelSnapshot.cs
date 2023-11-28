@@ -87,7 +87,7 @@ namespace WebApp.Migrations
                         },
                         new
                         {
-                            Id = new Guid("30ed9803-1bab-43e3-848c-0866691092b7"),
+                            Id = new Guid("4df65d27-8f73-4e26-a91e-78f412c8d1e8"),
                             CarBrandId = new Guid("86dba8c0-d178-41e7-938c-ed49778fb52a"),
                             Name = "2114"
                         });
@@ -132,23 +132,23 @@ namespace WebApp.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("c1d5848f-0231-4bdf-abc5-cf09495835b7"),
+                            Id = new Guid("12f588d7-0e68-428e-a93f-7befc30823fb"),
                             CarBrandId = new Guid("80abbca8-664d-4b20-b5de-024705497d4a"),
                             CarModelId = new Guid("c9d4c053-49b6-410c-bc78-2d54a9991870"),
                             Description = "Color = REd",
                             Millage = 300000,
-                            PostDate = new DateTime(2023, 11, 27, 21, 15, 13, 460, DateTimeKind.Local).AddTicks(1407),
+                            PostDate = new DateTime(2023, 11, 28, 15, 34, 46, 654, DateTimeKind.Local).AddTicks(2138),
                             Price = 1000000m,
                             ReleaseYear = 1999
                         },
                         new
                         {
-                            Id = new Guid("4dd81212-cdeb-46a2-b304-6c2ad7225fc7"),
+                            Id = new Guid("a0d81da0-6e83-4965-bb0f-d7a0817e2c18"),
                             CarBrandId = new Guid("80abbca8-664d-4b20-b5de-024705497d4a"),
                             CarModelId = new Guid("3d490a70-94ce-4d15-9494-5248280c2ce3"),
                             Description = "Description",
                             Millage = 199213,
-                            PostDate = new DateTime(2023, 11, 27, 21, 15, 13, 460, DateTimeKind.Local).AddTicks(1422),
+                            PostDate = new DateTime(2023, 11, 28, 15, 34, 46, 654, DateTimeKind.Local).AddTicks(2152),
                             Price = 1000000m,
                             ReleaseYear = 2005
                         });
@@ -204,6 +204,12 @@ namespace WebApp.Migrations
                     b.Property<bool>("PhoneNumberConfirmed")
                         .HasColumnType("bit");
 
+                    b.Property<string>("RefreshToken")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("RefreshTokenExpiryTime")
+                        .HasColumnType("datetime2");
+
                     b.Property<string>("SecurityStamp")
                         .HasColumnType("nvarchar(max)");
 
@@ -252,6 +258,22 @@ namespace WebApp.Migrations
                         .HasFilter("[NormalizedName] IS NOT NULL");
 
                     b.ToTable("AspNetRoles", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = "de79514b-b52c-4060-941d-51c5880c1fdb",
+                            ConcurrencyStamp = "7447fa1f-e595-4295-9d04-578fbc5fc2d4",
+                            Name = "User",
+                            NormalizedName = "User"
+                        },
+                        new
+                        {
+                            Id = "45feb966-5d37-4fb0-b3a9-d948d2798000",
+                            ConcurrencyStamp = "767a9b5b-da23-45dc-9c4a-e00fa67b1d2b",
+                            Name = "Admin",
+                            NormalizedName = "ADMIN"
+                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

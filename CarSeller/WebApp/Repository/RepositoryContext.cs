@@ -20,6 +20,7 @@ namespace Repository
             modelBuilder.ApplyConfiguration(new CarBrandConfiguration());
             modelBuilder.ApplyConfiguration(new CarModelConfiguration());
             modelBuilder.ApplyConfiguration(new LotConfigurations());
+            modelBuilder.ApplyConfiguration(new RoleConfiguration());
         }
         public DbSet<Lot>? Lots { get; set; }
         public DbSet<CarBrand>? CarBrands { get; set; }

@@ -11,6 +11,7 @@ namespace Service.Contracts
         ICarBrandService CarBrandService { get; }
         ILotService LotService { get; }
         ICarModelService CarModelService { get; }
+        IAuthenticationService AuthenticationService { get; }
 
     }
 }

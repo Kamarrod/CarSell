@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.JsonPatch;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Service.Contracts;
@@ -42,6 +43,8 @@ namespace WebApp.Presentation.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "Admin")]
+
         public async Task<IActionResult> CreateCarModel(Guid carBrandId, [FromBody] CarModelForCreationDTO carModel)
         {
             if (carModel is null)
@@ -55,6 +58,7 @@ namespace WebApp.Presentation.Controllers
         }
 
         [HttpDelete("{id:guid}")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> DeleteCarModel(Guid id, Guid carBrandId)
         {
             await _service.CarModelService.DeleteCarModelAsync(carBrandId, id, trackChanges: false);
@@ -62,6 +66,7 @@ namespace WebApp.Presentation.Controllers
         }
 
         [HttpPut("{id:guid}")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> UpdateCarModel(Guid id, Guid carBrandId, [FromBody] CarModelForUpdateDTO carModelForUpdateDTO)
         {
             if (carModelForUpdateDTO is null)
@@ -76,6 +81,7 @@ namespace WebApp.Presentation.Controllers
         }
 
         [HttpPatch("{id:guid}")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> PartiallyUpdateCarModelForCarBrand(Guid id, Guid carBrandId,
             [FromBody] JsonPatchDocument<CarModelForUpdateDTO> patchDoc)
         {
@@ -96,6 +102,7 @@ namespace WebApp.Presentation.Controllers
         }
 
         [HttpOptions]
+        [Authorize(Roles = "Admin")]
         public IActionResult GetCarodelsOptions()
         {
             Response.Headers.Add("Allow", "GET, OPTIONS, POST, PUT, DELETE");

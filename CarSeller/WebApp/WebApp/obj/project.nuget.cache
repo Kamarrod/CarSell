@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "1qLAmvOHPTuhOgX9+vMfYsFsqMvBY1getvzpXmUyaYgBr7u6z4fMTcFCxbotOswH7d9l3qPMh1TftT+tVyBVLQ==",
+  "dgSpecHash": "T/CaKFFLih7VhpKk77UdbwLmN/n4tKGcpQ38df9gijH7W3wsSADfIL0MjCLqH4WuIrDVWKJjDkTC6cHH8JsGWg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Дом\\source\\repos\\CarSell\\CarSell\\CarSeller\\WebApp\\WebApp\\WebApp.csproj",
   "expectedPackageFiles": [
@@ -14,6 +14,7 @@
     "C:\\Users\\Дом\\.nuget\\packages\\microsoft.aspnet.webpages\\3.3.0\\microsoft.aspnet.webpages.3.3.0.nupkg.sha512",
     "C:\\Users\\Дом\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Дом\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.2.0\\microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",
+    "C:\\Users\\Дом\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.24\\microsoft.aspnetcore.authentication.jwtbearer.6.0.24.nupkg.sha512",
     "C:\\Users\\Дом\\.nuget\\packages\\microsoft.aspnetcore.authorization\\2.2.0\\microsoft.aspnetcore.authorization.2.2.0.nupkg.sha512",
     "C:\\Users\\Дом\\.nuget\\packages\\microsoft.aspnetcore.authorization.policy\\2.2.0\\microsoft.aspnetcore.authorization.policy.2.2.0.nupkg.sha512",
     "C:\\Users\\Дом\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.24\\microsoft.aspnetcore.cryptography.internal.6.0.24.nupkg.sha512",

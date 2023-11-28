@@ -1,5 +1,8 @@
 ﻿using AutoMapper;
 using Contracts;
+using Entities.Models;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.Configuration;
 using Service.Contracts;
 using Shared.DataTransferObjects;
 using System;
@@ -15,11 +18,14 @@ namespace Service
         private readonly Lazy<ILotService> _lotService;
         private readonly Lazy<ICarBrandService> _carBrandService;
         private readonly Lazy<ICarModelService> _carModelService;
+        private readonly Lazy<IAuthenticationService> _authenticationService;
 
         public ServiceManager(IRepositoryManager repositoryManager,
                               ILoggerManager loggerManager,
                               IMapper mapper,
-                              IDataShaper<CarModelDTO> dataShaper)
+                              IDataShaper<CarModelDTO> dataShaper,
+                              UserManager<User> userManager,
+                              IConfiguration configuration)
         {
             _lotService = new Lazy<ILotService>(() => 
                 new LotService(repositoryManager, loggerManager, mapper));
@@ -29,6 +35,9 @@ namespace Service
 
             _carBrandService = new Lazy<ICarBrandService>(() => 
                 new CarBrandService(repositoryManager, loggerManager, mapper));
+
+            _authenticationService = new Lazy<IAuthenticationService>( () =>
+            new AuthenticationService(loggerManager, mapper,userManager ,configuration));
         }
 
         public ICarBrandService CarBrandService => _carBrandService.Value;
@@ -36,5 +45,7 @@ namespace Service
         public ILotService LotService => _lotService.Value;
 
         public ICarModelService CarModelService => _carModelService.Value;
+
+        public IAuthenticationService AuthenticationService => _authenticationService.Value;
     }
 }

@@ -16,6 +16,7 @@ namespace WebApp
             CreateMap<CarModelForUpdateDTO, CarModel>();
             CreateMap<CarModelForUpdateDTO, CarModel>().ReverseMap();
             CreateMap<CarBrandForUpdateDTO, CarBrand>();
+            CreateMap<UserForRegistrationDTO, User>();
         }
     }
 }
