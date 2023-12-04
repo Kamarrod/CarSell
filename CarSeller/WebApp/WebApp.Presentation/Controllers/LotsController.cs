@@ -37,12 +37,12 @@ namespace WebApp.Presentation.Controllers
                 return BadRequest("LotForCreationDTO object is null");
             //var access_token = User.Claims.FirstOrDefault(c => c.Type == "access_token")?.Value;
 
-            foreach (var claim in User.Claims)
-            {
-                Console.WriteLine($"Claim Type: {claim.Type}, Claim Value: {claim.Value}");
-            }
+            //foreach (var claim in User.Claims)
+            //{
+            //    Console.WriteLine($"Claim Type: {claim.Type}, Claim Value: {claim.Value}");
+            //}
             var createLot = await _service.LotService.CreateLotAsync(lotForCreation, trackChanges : false);
-            return CreatedAtRoute("CarLotById", new { id = createLot.Id }, createLot);
+            return CreatedAtRoute("LotById", new { id = createLot.Id }, createLot);
 
         }
     }

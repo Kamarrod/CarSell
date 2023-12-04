@@ -26,12 +26,12 @@ namespace Shared.DataTransferObjects
 
         [Required(ErrorMessage = "Укжите год выпуска")]
         [Range(1860, int.MaxValue, ErrorMessage = "ReleaseYear  must be a non-negative number.")]
-        public int ReleaseYear { get; set; }
+        public int ReleaseYear { get; init; }
 
         [Required(ErrorMessage = "Укажите пробег")]
         [Range(0, int.MaxValue, ErrorMessage = "Millage must be a non-negative number.")]
-        public int Millage { get; set; }
+        public int Millage { get; init; }
 
-        public string UserId { get; set; }
+        public string UserId { get; init; }
     }
 }

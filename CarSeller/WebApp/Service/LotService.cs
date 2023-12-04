@@ -80,7 +80,7 @@ namespace Service
             var lotEntity = _mapper.Map<Lot>(lotForCreation);
             lotEntity.PostDate = DateTime.Now;
             
-            _repository.Lot.CreateLot(lotEntity.CarModelId, lotEntity.CarBrandId, lotEntity);
+            _repository.Lot.CreateLot(lotEntity.CarBrandId, lotEntity.CarModelId, lotEntity);
             _repository.SaveAsync();
 
             var lotDTO = _mapper.Map<LotDTO>(lotEntity);

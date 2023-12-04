@@ -35,8 +35,8 @@ namespace WebApp.Presentation.Controllers
         }
 
         [HttpPost]
-        [Authorize(Roles = "Admin")]
-        public async Task<IActionResult> CreateCarBrand([FromQuery] CarBrandForCreationDTO carBrand)
+        //[Authorize(Roles = "Admin")]
+        public async Task<IActionResult> CreateCarBrand([FromBody] CarBrandForCreationDTO carBrand)
         {
             if (carBrand == null)
                 return BadRequest("CarBrandForCreationDTO object is null");
