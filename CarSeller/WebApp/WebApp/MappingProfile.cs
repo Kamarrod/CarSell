@@ -9,6 +9,9 @@ namespace WebApp
         public MappingProfile() 
         {
             CreateMap<Lot, LotDTO>();
+            CreateMap<LotForCreationDTO, Lot>();
+            CreateMap<LotForUpdateDTO, Lot>();
+            CreateMap<LotForUpdateDTO, Lot>().ReverseMap();
             CreateMap<CarBrand, CarBrandDTO>();
             CreateMap<CarModel, CarModelDTO>();
             CreateMap<CarBrandForCreationDTO,CarBrand >();

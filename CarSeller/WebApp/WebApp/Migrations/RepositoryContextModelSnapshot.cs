@@ -87,7 +87,7 @@ namespace WebApp.Migrations
                         },
                         new
                         {
-                            Id = new Guid("4df65d27-8f73-4e26-a91e-78f412c8d1e8"),
+                            Id = new Guid("7e486044-b0a6-49af-be30-0fa512918a04"),
                             CarBrandId = new Guid("86dba8c0-d178-41e7-938c-ed49778fb52a"),
                             Name = "2114"
                         });
@@ -121,6 +121,10 @@ namespace WebApp.Migrations
                     b.Property<int>("ReleaseYear")
                         .HasColumnType("int");
 
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("Id");
 
                     b.HasIndex("CarBrandId");
@@ -132,25 +136,27 @@ namespace WebApp.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("12f588d7-0e68-428e-a93f-7befc30823fb"),
+                            Id = new Guid("e198ea37-53cc-4da6-b260-488908b55536"),
                             CarBrandId = new Guid("80abbca8-664d-4b20-b5de-024705497d4a"),
                             CarModelId = new Guid("c9d4c053-49b6-410c-bc78-2d54a9991870"),
                             Description = "Color = REd",
                             Millage = 300000,
-                            PostDate = new DateTime(2023, 11, 28, 15, 34, 46, 654, DateTimeKind.Local).AddTicks(2138),
+                            PostDate = new DateTime(2023, 12, 2, 18, 43, 53, 814, DateTimeKind.Local).AddTicks(2183),
                             Price = 1000000m,
-                            ReleaseYear = 1999
+                            ReleaseYear = 1999,
+                            UserId = "3bdb34fe-9d78-47db-b25c-7eaa17a8661f"
                         },
                         new
                         {
-                            Id = new Guid("a0d81da0-6e83-4965-bb0f-d7a0817e2c18"),
+                            Id = new Guid("e403edde-665d-4be7-95c3-95e943b1cbc3"),
                             CarBrandId = new Guid("80abbca8-664d-4b20-b5de-024705497d4a"),
                             CarModelId = new Guid("3d490a70-94ce-4d15-9494-5248280c2ce3"),
                             Description = "Description",
                             Millage = 199213,
-                            PostDate = new DateTime(2023, 11, 28, 15, 34, 46, 654, DateTimeKind.Local).AddTicks(2152),
+                            PostDate = new DateTime(2023, 12, 2, 18, 43, 53, 814, DateTimeKind.Local).AddTicks(2199),
                             Price = 1000000m,
-                            ReleaseYear = 2005
+                            ReleaseYear = 2005,
+                            UserId = "3bdb34fe-9d78-47db-b25c-7eaa17a8661f"
                         });
                 });
 
@@ -262,15 +268,15 @@ namespace WebApp.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "de79514b-b52c-4060-941d-51c5880c1fdb",
-                            ConcurrencyStamp = "7447fa1f-e595-4295-9d04-578fbc5fc2d4",
+                            Id = "bdc2b54b-75da-420f-8092-076cf1b81d78",
+                            ConcurrencyStamp = "c1915086-d066-4393-ba1b-c059c68cbc61",
                             Name = "User",
-                            NormalizedName = "User"
+                            NormalizedName = "USER"
                         },
                         new
                         {
-                            Id = "45feb966-5d37-4fb0-b3a9-d948d2798000",
-                            ConcurrencyStamp = "767a9b5b-da23-45dc-9c4a-e00fa67b1d2b",
+                            Id = "0cbba9b8-d342-4d39-8cf1-9a1af57f56ed",
+                            ConcurrencyStamp = "5788af67-a433-4dff-8ef7-46f1a31924e7",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         });

@@ -23,15 +23,16 @@ namespace Service
         public ServiceManager(IRepositoryManager repositoryManager,
                               ILoggerManager loggerManager,
                               IMapper mapper,
-                              IDataShaper<CarModelDTO> dataShaper,
+                              IDataShaper<CarModelDTO> dataShaperModel,
+                              IDataShaper<LotDTO> dataShaperLot,
                               UserManager<User> userManager,
                               IConfiguration configuration)
         {
             _lotService = new Lazy<ILotService>(() => 
-                new LotService(repositoryManager, loggerManager, mapper));
+                new LotService(repositoryManager, loggerManager, mapper, dataShaperLot));
 
             _carModelService = new Lazy<ICarModelService>(() => 
-                new CarModelService(repositoryManager, loggerManager, mapper, dataShaper )) ;
+                new CarModelService(repositoryManager, loggerManager, mapper, dataShaperModel )) ;
 
             _carBrandService = new Lazy<ICarBrandService>(() => 
                 new CarBrandService(repositoryManager, loggerManager, mapper));

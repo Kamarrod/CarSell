@@ -1,6 +1,7 @@
 ﻿using Contracts;
 using Entities.Models;
 using Microsoft.EntityFrameworkCore;
+using Repository.Extensions;
 using Shared.RequestFeatures;
 using System;
 using System.Collections.Generic;
@@ -19,7 +20,8 @@ namespace Repository
         {
             var carBradns = await
             FindAll(trackChanges)
-            .OrderBy(x => x.Name)
+            .Search(carBrandParameters.SearchTerm)
+            .Sort(carBrandParameters.OrderBy)
             .ToListAsync();
 
             return PagedList<CarBrand>.ToPagedList(carBradns,

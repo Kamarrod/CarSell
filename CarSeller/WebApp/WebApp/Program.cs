@@ -24,6 +24,7 @@ builder.Services.ConfigureIdentity();
 builder.Services.ConfigureJWT(builder.Configuration);
 
 builder.Services.AddScoped<IDataShaper<CarModelDTO>, DataShaper<CarModelDTO>>();
+builder.Services.AddScoped<IDataShaper<LotDTO>, DataShaper<LotDTO>>();
 
 
 builder.Services.Configure<ApiBehaviorOptions>(options =>

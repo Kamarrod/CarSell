@@ -17,7 +17,7 @@ namespace Repository.Configurations
                 new IdentityRole
                 {
                     Name = "User",
-                    NormalizedName = "User"
+                    NormalizedName = "USER"
                 },
                 new IdentityRole
                 {

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Service.Contracts;
 using Shared.DataTransferObjects;
@@ -34,7 +35,8 @@ namespace WebApp.Presentation.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreateCarBrand([FromBody] CarBrandForCreationDTO carBrand)
+        [Authorize(Roles = "Admin")]
+        public async Task<IActionResult> CreateCarBrand([FromQuery] CarBrandForCreationDTO carBrand)
         {
             if (carBrand == null)
                 return BadRequest("CarBrandForCreationDTO object is null");

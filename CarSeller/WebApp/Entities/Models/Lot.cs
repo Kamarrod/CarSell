@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore.Metadata.Conventions;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore.Metadata.Conventions;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -37,6 +38,11 @@ namespace Entities.Models
         [ForeignKey(nameof(CarModel))]
         [Required]
         public Guid CarModelId { get; set;}
+
+        [ForeignKey(nameof(User))]
+        [Required]
+        public string UserId { get; set; }
+
 
         public CarModel? Model { get; set; }
     }
