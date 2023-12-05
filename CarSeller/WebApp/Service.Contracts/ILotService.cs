@@ -1,4 +1,5 @@
-﻿using Shared.DataTransferObjects;
+﻿using Entities.Models;
+using Shared.DataTransferObjects;
 using Shared.RequestFeatures;
 using System;
 using System.Collections.Generic;
@@ -16,6 +17,11 @@ namespace Service.Contracts
         Task<LotDTO> GetLotAsync(Guid lotId, bool trackChanges);
         Task<LotDTO> CreateLotAsync(LotForCreationDTO lotForCreation, bool trackChanges);
         Task UpdateLotAsync(Guid lotId, LotForUpdateDTO lotForUpdate, bool trackChanges);
+        Task DeleteLotAsync(Guid lotId, bool trackChanges);
+
+        Task<(LotForUpdateDTO lotToPatch, Lot lotEntity)> GetLotForPatchAsync( Guid lotId,
+            bool trackChanges);
+        Task SaveChangesForPatchAsync(LotForUpdateDTO lotToPatch, Lot lotEntity);
 
     }
 }

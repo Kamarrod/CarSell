@@ -86,5 +86,30 @@ namespace Service
             var lotDTO = _mapper.Map<LotDTO>(lotEntity);
             return lotDTO;
         }
+
+        public async Task DeleteLotAsync(Guid lotId, bool trackChanges)
+        {
+            var lot = await _repository.Lot.GetLotAsync(lotId, trackChanges: false);
+            if (lot is null)
+                throw new LotNotFoundException(lotId);
+
+            _repository.Lot.DeleteLot(lot);
+            await _repository.SaveAsync();
+        }
+
+        public async Task<(LotForUpdateDTO lotToPatch, Lot lotEntity)> GetLotForPatchAsync(Guid lotId, bool trackChanges)
+        {
+            var lotEntity = await _repository.Lot.GetLotAsync(lotId, trackChanges);
+            if (lotEntity is null)
+                throw new LotNotFoundException(lotId);
+
+            var lotToPatch = _mapper.Map<LotForUpdateDTO>(lotEntity);
+            return(lotToPatch, lotEntity);
+        }
+        public async Task SaveChangesForPatchAsync(LotForUpdateDTO lotToPatch, Lot lotEntity)
+        {
+            _mapper.Map(lotToPatch, lotEntity);
+            await _repository.SaveAsync();
+        }
     }
 }

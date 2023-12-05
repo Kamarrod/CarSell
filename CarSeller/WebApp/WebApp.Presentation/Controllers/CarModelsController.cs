@@ -7,6 +7,7 @@ using Shared.DataTransferObjects;
 using Shared.RequestFeatures;
 using System.Text.Json;
 
+
 namespace WebApp.Presentation.Controllers
 {
     [Route("api/carbrands/{carBrandId}/carmodels")]
@@ -81,7 +82,7 @@ namespace WebApp.Presentation.Controllers
         }
 
         [HttpPatch("{id:guid}")]
-        [Authorize(Roles = "Admin")]
+        //[Authorize(Roles = "Admin")]
         public async Task<IActionResult> PartiallyUpdateCarModelForCarBrand(Guid id, Guid carBrandId,
             [FromBody] JsonPatchDocument<CarModelForUpdateDTO> patchDoc)
         {
