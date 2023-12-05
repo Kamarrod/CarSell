@@ -24,7 +24,7 @@ namespace Service
                               ILoggerManager loggerManager,
                               IMapper mapper,
                               IDataShaper<CarModelDTO> dataShaperModel,
-                              IDataShaper<LotDTO> dataShaperLot,
+                              IDataShaper<LotDTO>? dataShaperLot,
                               UserManager<User> userManager,
                               IConfiguration configuration)
         {

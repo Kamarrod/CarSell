@@ -8,7 +8,7 @@ namespace Shared.RequestFeatures
 {
     public class LotParameters : RequestParameters
     {
-        public LotParameters() => OrderBy = "name";
+        public LotParameters() => OrderBy = "postdate";
         public string? SearchTerm { get; set; }
     }
 }
