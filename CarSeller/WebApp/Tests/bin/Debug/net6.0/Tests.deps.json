@@ -11,11 +11,8 @@
           "LoggerService": "1.0.0",
           "Microsoft.NET.Test.Sdk": "17.3.2",
           "Moq": "4.20.70",
-          "Repository": "1.0.0",
           "Service": "1.0.0",
-          "Service.Contracts": "1.0.0",
           "WebApp": "1.0.0",
-          "WebApp.Presentation": "1.0.0",
           "coverlet.collector": "3.1.2",
           "xunit": "2.4.2",
           "xunit.runner.visualstudio": "2.4.5"

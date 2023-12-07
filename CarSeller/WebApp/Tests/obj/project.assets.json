@@ -9830,11 +9830,8 @@
       "LoggerService >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 17.3.2",
       "Moq >= 4.20.70",
-      "Repository >= 1.0.0",
       "Service >= 1.0.0",
-      "Service.Contracts >= 1.0.0",
       "WebApp >= 1.0.0",
-      "WebApp.Presentation >= 1.0.0",
       "coverlet.collector >= 3.1.2",
       "xunit >= 2.4.2",
       "xunit.runner.visualstudio >= 2.4.5"
@@ -9876,17 +9873,8 @@
             "C:\\Users\\Дом\\source\\repos\\CarSell\\CarSell\\CarSeller\\WebApp\\LoggerService\\LoggerService.csproj": {
               "projectPath": "C:\\Users\\Дом\\source\\repos\\CarSell\\CarSell\\CarSeller\\WebApp\\LoggerService\\LoggerService.csproj"
             },
-            "C:\\Users\\Дом\\source\\repos\\CarSell\\CarSell\\CarSeller\\WebApp\\Repository\\Repository.csproj": {
-              "projectPath": "C:\\Users\\Дом\\source\\repos\\CarSell\\CarSell\\CarSeller\\WebApp\\Repository\\Repository.csproj"
-            },
-            "C:\\Users\\Дом\\source\\repos\\CarSell\\CarSell\\CarSeller\\WebApp\\Service.Contracts\\Service.Contracts.csproj": {
-              "projectPath": "C:\\Users\\Дом\\source\\repos\\CarSell\\CarSell\\CarSeller\\WebApp\\Service.Contracts\\Service.Contracts.csproj"
-            },
             "C:\\Users\\Дом\\source\\repos\\CarSell\\CarSell\\CarSeller\\WebApp\\Service\\Service.csproj": {
               "projectPath": "C:\\Users\\Дом\\source\\repos\\CarSell\\CarSell\\CarSeller\\WebApp\\Service\\Service.csproj"
-            },
-            "C:\\Users\\Дом\\source\\repos\\CarSell\\CarSell\\CarSeller\\WebApp\\WebApp.Presentation\\WebApp.Presentation.csproj": {
-              "projectPath": "C:\\Users\\Дом\\source\\repos\\CarSell\\CarSell\\CarSeller\\WebApp\\WebApp.Presentation\\WebApp.Presentation.csproj"
             },
             "C:\\Users\\Дом\\source\\repos\\CarSell\\CarSell\\CarSeller\\WebApp\\WebApp\\WebApp.csproj": {
               "projectPath": "C:\\Users\\Дом\\source\\repos\\CarSell\\CarSell\\CarSeller\\WebApp\\WebApp\\WebApp.csproj"

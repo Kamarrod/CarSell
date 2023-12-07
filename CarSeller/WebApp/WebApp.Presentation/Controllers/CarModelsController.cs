@@ -44,7 +44,7 @@ namespace WebApp.Presentation.Controllers
         }
 
         [HttpPost]
-        [Authorize(Roles = "Admin")]
+        //[Authorize(Roles = "Admin")]
 
         public async Task<IActionResult> CreateCarModel(Guid carBrandId, [FromBody] CarModelForCreationDTO carModel)
         {
@@ -59,7 +59,7 @@ namespace WebApp.Presentation.Controllers
         }
 
         [HttpDelete("{id:guid}")]
-        [Authorize(Roles = "Admin")]
+        //[Authorize(Roles = "Admin")]
         public async Task<IActionResult> DeleteCarModel(Guid id, Guid carBrandId)
         {
             await _service.CarModelService.DeleteCarModelAsync(carBrandId, id, trackChanges: false);
@@ -67,7 +67,7 @@ namespace WebApp.Presentation.Controllers
         }
 
         [HttpPut("{id:guid}")]
-        [Authorize(Roles = "Admin")]
+        //[Authorize(Roles = "Admin")]
         public async Task<IActionResult> UpdateCarModel(Guid id, Guid carBrandId, [FromBody] CarModelForUpdateDTO carModelForUpdateDTO)
         {
             if (carModelForUpdateDTO is null)

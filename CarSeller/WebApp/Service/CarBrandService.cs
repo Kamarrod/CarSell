@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 
 namespace Service
 {
-    internal sealed class CarBrandService : ICarBrandService
+    public sealed class CarBrandService : ICarBrandService
     {
         private readonly IRepositoryManager _repository;
         private readonly ILoggerManager _logger;

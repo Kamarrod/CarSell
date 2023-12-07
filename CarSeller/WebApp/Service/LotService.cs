@@ -11,7 +11,8 @@ using System.Security.Claims;
 
 namespace Service
 {
-    internal sealed class LotService : ILotService
+    //internal sealed class LotService : ILotService
+    public sealed class LotService : ILotService
     {
         private readonly IRepositoryManager _repository;
         private readonly ILoggerManager _logger;
